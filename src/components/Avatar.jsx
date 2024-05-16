@@ -69,15 +69,14 @@ export function Avatar(props) {
   useEffect(() => {
     if (playAudio) {
       audio.play();
+      if (script === "intro") {
+        setAnimation("Waving");
+      } else {
+        setAnimation("Idle");
+      }
     } else {
+      setAnimation("Walk");
       audio.pause();
-    }
-
-    // Establecer animación según el script
-    if (script === 'intro') {
-      setAnimation('Waving');
-    } else {
-      setAnimation('Idle');
     }
   }, [playAudio, script]);
 
