@@ -12,7 +12,7 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <Avatar position={[0.80, -1.5, -1]} scale={1.1} rotation={avatarRotation}/>
+      <Avatar position={[4, -1.5, 0]} scale={1.1} rotation={avatarRotation}/>
       <Environment preset="sunset" /> 
       <OfficeScene />
       
